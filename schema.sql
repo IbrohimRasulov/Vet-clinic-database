@@ -67,3 +67,7 @@ CREATE TABLE VISITS (
         FOREIGN KEY (vets_id)
             REFERENCES vets(id)
 );
+
+ALTER TABLE owners
+ADD COLUMN email VARCHAR(120);
+
