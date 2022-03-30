@@ -67,3 +67,12 @@ CREATE TABLE VISITS (
         FOREIGN KEY (vets_id)
             REFERENCES vets(id)
 );
+
+--! Milestone 5
+
+ALTER TABLE owners
+ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX animal_id ON visits (animal_id ASC);
+CREATE INDEX vet_id ON visits (vet_id ASC);
+CREATE INDEX email_id ON owners(email ASC);
