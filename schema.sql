@@ -68,6 +68,7 @@ CREATE TABLE VISITS (
             REFERENCES vets(id)
 );
 
+--! Milestone 5
+
 ALTER TABLE owners
 ADD COLUMN email VARCHAR(120);
-
